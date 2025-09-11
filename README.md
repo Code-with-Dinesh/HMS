@@ -98,6 +98,4 @@ Allows user to set new password
 
 
 
-Returns user profile based on token
 
-## 📌 Features of Patent we will add soon (Feature of patent we will add soon)

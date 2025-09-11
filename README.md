@@ -74,27 +74,26 @@ This document explains the complete **authentication flow** used in the Hospital
   "password": "hashed_password",
   "role": "admin"
 }
-
-📂 API Endpoints (Auth Related)
-✅ POST /api/auth/register
+## API Endpoints (Auth Related)
+## POST /api/auth/register
 
 Registers a new user
 
 Sends success email
 
-✅ POST /api/auth/login
+## ✅ POST /api/auth/login
 
 Logs in the user/admin and returns JWT token
 
-✅ POST /api/auth/forgot-password
+## ✅ POST /api/auth/forgot-password
 
 Sends reset link or OTP to user email
 
-✅ POST /api/auth/reset-password
+## ✅ POST /api/auth/reset-password
 
 Allows user to set new password
 
-✅ GET /api/auth/me
+## ✅ GET /api/auth/me
 
 Returns user profile based on token
 

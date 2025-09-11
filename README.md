@@ -52,6 +52,19 @@ This document explains the complete **authentication flow** used in the Hospital
 - User-specific routes like viewing prescriptions, booking appointments are protected by user authentication.
 
 ---
+### ✅ POST /api/auth/login
+
+Logs in the user/admin and returns JWT token
+
+## ✅ POST /api/auth/forgot-password
+
+Sends reset link or OTP to user email
+
+## ✅ POST /api/auth/reset-password
+
+Allows user to set new password
+
+## ✅ GET /api/auth/me
 
 ## 📦 Database Models
 
@@ -81,19 +94,7 @@ Registers a new user
 
 Sends success email
 
-## ✅ POST /api/auth/login
 
-Logs in the user/admin and returns JWT token
-
-## ✅ POST /api/auth/forgot-password
-
-Sends reset link or OTP to user email
-
-## ✅ POST /api/auth/reset-password
-
-Allows user to set new password
-
-## ✅ GET /api/auth/me
 
 Returns user profile based on token
 

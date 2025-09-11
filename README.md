@@ -52,6 +52,13 @@ This document explains the complete **authentication flow** used in the Hospital
 - User-specific routes like viewing prescriptions, booking appointments are protected by user authentication.
 
 ---
+## API Endpoints (Auth Related)
+## POST /api/auth/register
+
+Registers a new user
+
+Sends success email
+
 ### ✅ POST /api/auth/login
 
 Logs in the user/admin and returns JWT token
@@ -87,12 +94,7 @@ Allows user to set new password
   "password": "hashed_password",
   "role": "admin"
 }
-## API Endpoints (Auth Related)
-## POST /api/auth/register
 
-Registers a new user
-
-Sends success email
 
 
 

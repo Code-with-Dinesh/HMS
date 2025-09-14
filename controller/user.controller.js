@@ -4,6 +4,7 @@ const ApiError = require("../utils/ApiError");
 const sendEmail = require("../nodemailer/emailService")
 const generateotp = require("../nodemailer/generateotp");
 
+
 exports.register = asyncWraper(async (req, res) => {
     const { username, email, password, role, profile } = req.body;
      console.log(username,email,password)

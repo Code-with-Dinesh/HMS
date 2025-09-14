@@ -33,7 +33,14 @@ const userSchema = mongooose.Schema({
         },
         address:{
             type:String,
-        }
+        },
+     
+    },
+    resetPasswordToken: {
+        type: String
+    },
+    resetPasswordExpire: {
+        type: Date
     }
 },{ timestamps: true })
 
@@ -52,6 +59,7 @@ userSchema.methods.generateAccessToken = (async function(){
             _id:this._id,
             username:this.username,
             email:this.email,
+            role:this.role,
         },process.env.ACCESS_TOKEN_KEY,{expiresIn:"2h"})
 })
 
